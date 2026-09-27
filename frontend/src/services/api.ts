@@ -7,7 +7,7 @@ import {
   AuditLog, Notification, PublicStats
 } from '../types';
 
-const API_BASE_URL = '/api';
+const API_BASE_URL = 'https://setustart-1.onrender.com/api';
 
 const api = axios.create({
   baseURL: API_BASE_URL,
