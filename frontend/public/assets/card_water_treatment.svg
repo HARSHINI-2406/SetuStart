@@ -1,0 +1,30 @@
+<svg width="400" height="200" viewBox="0 0 400 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="waterGrad1" x1="0" y1="0" x2="0" y2="200">
+      <stop offset="0%" stop-color="#0284C7"/>
+      <stop offset="50%" stop-color="#0369A1"/>
+      <stop offset="100%" stop-color="#075985"/>
+    </linearGradient>
+    <linearGradient id="waterFlow" x1="0" y1="0" x2="400" y2="0">
+      <stop offset="0%" stop-color="#38BDF8"/>
+      <stop offset="50%" stop-color="#7DD3FC"/>
+      <stop offset="100%" stop-color="#0284C7"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="400" height="200" fill="url(#waterGrad1)"/>
+
+  <!-- Water Filtration & Treatment Reservoir Structure -->
+  <rect x="20" y="30" width="160" height="120" rx="8" fill="#334155" stroke="#64748B" stroke-width="2"/>
+  <rect x="30" y="40" width="140" height="100" rx="4" fill="url(#waterFlow)" opacity="0.85"/>
+  <circle cx="100" cy="90" r="25" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-dasharray="6 4"/>
+
+  <rect x="220" y="30" width="160" height="120" rx="8" fill="#334155" stroke="#64748B" stroke-width="2"/>
+  <rect x="230" y="40" width="140" height="100" rx="4" fill="url(#waterFlow)" opacity="0.9"/>
+  <circle cx="300" cy="90" r="25" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-dasharray="6 4"/>
+
+  <!-- Connecting Pipes & Real-Time Monitoring Sensors -->
+  <rect x="180" y="80" width="40" height="20" fill="#94A3B8"/>
+  <circle cx="200" cy="90" r="8" fill="#10B981"/>
+  <path d="M0 160C80 140 160 180 240 160C320 140 370 170 400 160V200H0V160Z" fill="#38BDF8" opacity="0.6"/>
+</svg>

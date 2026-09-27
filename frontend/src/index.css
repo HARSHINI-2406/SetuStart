@@ -1,0 +1,110 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-slate-50 text-slate-900 antialiased selection:bg-blue-700 selection:text-white font-sans;
+  }
+}
+
+/* Government Portal Components Styling */
+.gov-panel {
+  @apply bg-white border border-slate-200 rounded-lg shadow-sm;
+}
+
+.glass-panel {
+  @apply bg-white border border-slate-200 rounded-lg shadow-sm;
+}
+
+.card-gov {
+  @apply bg-white border border-slate-200 rounded-lg p-5 shadow-sm hover:shadow-md transition-shadow;
+}
+
+.btn-primary {
+  @apply bg-blue-700 hover:bg-blue-800 text-white font-medium px-4 py-2 rounded-md transition-colors shadow-sm active:scale-[0.98] disabled:opacity-50 disabled:pointer-events-none text-sm inline-flex items-center justify-center gap-2;
+}
+
+.btn-secondary {
+  @apply bg-white hover:bg-slate-100 text-slate-700 border border-slate-300 font-medium px-4 py-2 rounded-md transition-colors shadow-sm active:scale-[0.98] disabled:opacity-50 disabled:pointer-events-none text-sm inline-flex items-center justify-center gap-2;
+}
+
+.btn-accent {
+  @apply bg-emerald-700 hover:bg-emerald-800 text-white font-medium px-4 py-2 rounded-md transition-colors shadow-sm active:scale-[0.98] disabled:opacity-50 disabled:pointer-events-none text-sm inline-flex items-center justify-center gap-2;
+}
+
+.btn-outline {
+  @apply bg-transparent hover:bg-blue-50 text-blue-700 border border-blue-600 font-medium px-4 py-2 rounded-md transition-colors text-sm inline-flex items-center justify-center gap-2;
+}
+
+.input-field {
+  @apply bg-white border border-slate-300 rounded-md px-3 py-2 text-slate-900 placeholder-slate-400 focus:outline-none focus:border-blue-600 focus:ring-1 focus:ring-blue-600 transition-all w-full text-sm;
+}
+
+.select-field {
+  @apply bg-white border border-slate-300 rounded-md px-3 py-2 text-slate-900 focus:outline-none focus:border-blue-600 focus:ring-1 focus:ring-blue-600 transition-all w-full text-sm;
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Institutional Motion & Interactive Hover Utilities */
+.btn-gov-primary {
+  @apply bg-[#146EF5] hover:bg-blue-700 text-white font-semibold text-xs md:text-sm px-5 py-2.5 rounded-md transition-all duration-[250ms] shadow-sm inline-flex items-center space-x-2 cursor-pointer;
+}
+.btn-gov-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(20, 110, 245, 0.28);
+}
+.btn-gov-primary:hover .btn-arrow {
+  transform: translateX(4px);
+}
+.btn-gov-primary:active {
+  transform: translateY(0);
+  box-shadow: 0 1px 3px rgba(20, 110, 245, 0.2);
+}
+
+.btn-gov-secondary {
+  @apply bg-white hover:bg-slate-50 text-slate-800 border border-[#DCE6F2] font-semibold text-xs md:text-sm px-5 py-2.5 rounded-md transition-all duration-[250ms] shadow-sm inline-flex items-center space-x-2 cursor-pointer;
+}
+.btn-gov-secondary:hover {
+  transform: translateY(-2px);
+  border-color: #BFDBFE;
+  color: #146EF5;
+  box-shadow: 0 4px 12px rgba(15, 42, 86, 0.08);
+}
+.btn-gov-secondary:hover .btn-arrow {
+  transform: translateX(4px);
+}
+.btn-gov-secondary:active {
+  transform: translateY(0);
+}
+
+.btn-arrow {
+  transition: transform 250ms ease;
+}
+
+/* Scroll reveal transition classes */
+.section-reveal {
+  opacity: 0;
+  transform: translateY(35px);
+  transition: opacity 600ms cubic-bezier(0.16, 1, 0.3, 1), transform 600ms cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+.section-reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}

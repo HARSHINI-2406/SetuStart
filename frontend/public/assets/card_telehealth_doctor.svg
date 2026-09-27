@@ -1,0 +1,27 @@
+<svg width="400" height="200" viewBox="0 0 400 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="healthBg" x1="0" y1="0" x2="0" y2="200">
+      <stop offset="0%" stop-color="#047857"/>
+      <stop offset="100%" stop-color="#064E3B"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="400" height="200" fill="url(#healthBg)"/>
+
+  <!-- Telehealth Doctor & Digital Consultation Monitor -->
+  <rect x="50" y="25" width="200" height="130" rx="10" fill="#111827" stroke="#34D399" stroke-width="2"/>
+  <rect x="60" y="35" width="180" height="110" rx="6" fill="#065F46"/>
+
+  <!-- Doctor Silhouette & Stethoscope Icon -->
+  <circle cx="150" cy="70" r="22" fill="#E2E8F0"/>
+  <path d="M110 130C110 100 130 95 150 95C170 95 190 100 190 130H110Z" fill="#3B82F6"/>
+  <path d="M140 85C140 85 145 98 150 98C155 98 160 85 160 85" stroke="#F59E0B" stroke-width="3" fill="none"/>
+
+  <!-- Rural Health Clinic Interface Metrics -->
+  <rect x="270" y="35" width="90" height="40" rx="4" fill="#064E3B" stroke="#34D399"/>
+  <path d="M280 55H300L305 45L315 65L325 50L330 55H350" stroke="#34D399" stroke-width="2" fill="none"/>
+
+  <rect x="270" y="90" width="90" height="40" rx="4" fill="#064E3B" stroke="#34D399"/>
+  <circle cx="290" cy="110" r="8" fill="#10B981"/>
+  <rect x="305" y="106" width="40" height="8" rx="2" fill="#A7F3D0"/>
+</svg>
